@@ -5,7 +5,6 @@ Content Grouping for some sites, Destination &amp; SQL
 
 Page path - Query Exclude
 
-
 ```SQL
 
 REGEXP_REPLACE(Page path,'\\?.*','')
@@ -13,6 +12,8 @@ REGEXP_REPLACE(Page path,'\\?.*','')
 ```
 -------------------------
 
+
+Content Grouping
 ```SQL
 
 CASE
@@ -33,7 +34,4 @@ WHEN REGEXP_MATCH(Page path - Query Exclude, '.*/category/press-releases/.*|.*/c
 
 END
 ```
-```SQL
-SELECT * FROM film 
-WHERE  replacement_cost BETWEEN 12.99 AND 16.99;
-```
+
