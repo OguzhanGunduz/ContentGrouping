@@ -1,5 +1,6 @@
 Page path - Query Exclude
 
+
 ```SQL
 
 REGEXP_REPLACE(Page path,'\\?.*','')
@@ -26,4 +27,8 @@ WHEN REGEXP_MATCH(Page path - Query Exclude, '.*/about/.*|.*/board-of-directors/
 WHEN REGEXP_MATCH(Page path - Query Exclude, '.*/category/press-releases/.*|.*/category/latest-news/.*') THEN 'News' ELSE 'Others'
 
 END
+```
+```SQL
+SELECT * FROM film 
+WHERE  replacement_cost BETWEEN 12.99 AND 16.99;
 ```
